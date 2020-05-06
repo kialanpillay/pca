@@ -33,7 +33,6 @@ void PCA::read(void){
             getline(in,line); //Discard Empty Lines
         };
     };
-    std::cout << data;
 }
 
 void PCA::compute(std::ostream& os){
