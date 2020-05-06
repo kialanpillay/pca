@@ -11,7 +11,7 @@ pca.o: pca.cpp pca.h
 	$(CC) $(CCFLAGS) -c pca.cpp
 
 clean:
-	@rm -f *.o && rm -f driver rm output.txt
+	@rm -f *.o && rm -f driver
    
 run:
 	@./driver
