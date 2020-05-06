@@ -3,12 +3,14 @@ January
 July
 
 Observations: 64
+Variables: 2
 TAB
 
 51.2
 81.6
 
-Variables: 2
+
+
 TAL
 
 51.2
