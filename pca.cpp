@@ -46,7 +46,7 @@ void PCA::compute(std::ostream& os){
     EigenSolver<MatrixXd> es(cov);
     os << "Question 1)\nThe Eigenvalues for the principal components are: " << std::endl << es.eigenvalues().real() << std::endl << std::endl;
     os << "Question 2)\nThe Eigenvectors for the principal components are:" << std::endl << es.eigenvectors().real() << std::endl << std::endl;
-    os << "Col 1 - Principal Component 1 (Eigenvalue = " << es.eigenvalues()[0].real() << "), Col 1 - Principal Component 2 (Eigenvalue = " << es.eigenvalues()[1].real() << ")" << std::endl;
+    os << "Col 1 - Principal Component 1 (Eigenvalue = " << es.eigenvalues()[0].real() << "), Col 2 - Principal Component 2 (Eigenvalue = " << es.eigenvalues()[1].real() << ")" << std::endl;
     os << "Row 1 - January (X), Row 2 - July (Y)" << std::endl << std::endl;
     os << "Question 3)\nThe Covariance Matrix is: " << std::endl << cov << std::endl << std::endl;
 
