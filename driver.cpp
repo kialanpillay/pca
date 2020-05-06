@@ -1,13 +1,13 @@
 #include <iostream>
-#include <string>
+#include <fstream>
 #include "pca.h"
 
 using namespace std;
 
-int main(int argc, char* argv[])
-{   
-    string dataset = "2018-AvgRainfall_mm_.txt";
-    PLLKIA010::PCA p(dataset);
-    p.read();
+int main(int argc, char *argv[])
+{
+    ofstream out("output.txt");
+    PLLKIA010::PCA module("2018-AvgRainfall_mm_.txt");
+    out << module;
     return 0;
 }
