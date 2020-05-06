@@ -2,6 +2,9 @@
 #define PCA_H
 #include <vector>
 #include <string>
+#include "./Eigen/Dense"
+ 
+using namespace Eigen;
 
 namespace PLLKIA010
 {
@@ -9,22 +12,17 @@ namespace PLLKIA010
     {   
         public: 
             PCA(void);
-            PCA(const std::string dataset);
+            PCA(const std::string raw);
             void read(void);
-            void calculateEigenvalues(void);
-            void calculateEigenvectors(void);
-            void calculateCovarianceMatrix(void);
-            void calculateTotalVariance(void);
-            void calculatePCVariance(void);
+            void compute(std::ostream& os);
         private: 
-            std::string dataset;
-            std::vector<std::vector<float>> data;
-            std::vector<std::vector<float>> eigenvectors;
-            std::vector<std::vector<float>> covariance;
-            std::vector<float> eigenvalues;
-            float variance;
-            
+            std::string raw;
+            int M;
+            int N;
+            MatrixXd data;
+            MatrixXd cov;
     };
+    std::ostream& operator<<(std::ostream& os, const PCA& p);  
 }
 
 #endif
