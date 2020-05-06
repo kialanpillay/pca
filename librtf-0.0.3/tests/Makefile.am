@@ -1,3 +1,0 @@
-INCLUDES = 
-METASOURCES = AUTO
-SUBDIRS = 01_html_converter
