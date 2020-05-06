@@ -7,7 +7,6 @@ namespace PLLKIA010
     {   
         public: 
             PCA(void);
-            PCA();
             ~PCA(void);
         private: 
     };

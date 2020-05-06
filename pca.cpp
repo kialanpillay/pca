@@ -1,6 +1,7 @@
 #include "pca.h"
 #include <iostream>
 #include <fstream>
-#include <string>
+#include "./librtf-0.0.3/src/cpp/librtfcpp.h"
+#include <vector>
 
 using namespace PLLKIA010;
