@@ -17,7 +17,7 @@ This header file also contains the method declaration for the overloaded operato
 ## pca.cpp
 
 This file is the actual implementation of the methods declared in the ```PCA.h``` file. The implementation of the methods is explained below. \\
-The Constructor and responsible for initialising the object with string containing the name of the dataset. There is also a default Constructor that takes no arguments.
+The Constructor is responsible for initialising the object with a string containing the name of the dataset. There is also a default Constructor that takes no arguments.
 \\
 read: This method opens and extracts the data from the .txt file, and stores the values in an (M,N) ```MatrixXd``` object, where M is the number of observations and N is the dimensions of the dataset (2).
 \\
