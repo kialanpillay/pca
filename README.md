@@ -25,5 +25,5 @@ compute: This method heavily relies upon the ```Eigen``` library for much of its
 
 ## driver.cpp
 
-This file contains the main method, and provides an entry point into the program. It imports the ```clusterer.h``` file in order to provide the PCA functionality. The main method has an ```PCA``` object, and uses the overloaded operator to write the results to the supplied ```ostream```.
+This file contains the main method, and provides an entry point into the program. It imports the ```pca.h``` file in order to provide the PCA functionality. The main method has an ```PCA``` object, and uses the overloaded operator to write the results to the supplied ```ostream```.
 
