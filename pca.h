@@ -1,11 +1,8 @@
 #ifndef PCA_H
 #define PCA_H
-#include <vector>
 #include <string>
 #include "./Eigen/Dense"
  
-using namespace Eigen;
-
 namespace PLLKIA010
 {
     class PCA
@@ -19,8 +16,8 @@ namespace PLLKIA010
             std::string raw;
             int M;
             int N;
-            MatrixXd data;
-            MatrixXd cov;
+            Eigen::MatrixXd data;
+            Eigen::MatrixXd cov;
     };
     std::ostream& operator<<(std::ostream& os, const PCA& p);  
 }
