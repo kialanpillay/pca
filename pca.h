@@ -12,7 +12,7 @@ namespace PLLKIA010
     {   
         public: 
             PCA(void);
-            PCA(const std::string raw);
+            PCA(const std::string & raw);
             void read(void);
             void compute(std::ostream& os);
         private: 

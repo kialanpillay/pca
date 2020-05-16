@@ -9,7 +9,7 @@ using namespace Eigen;
 
 PCA::PCA(){}
 
-PCA::PCA(const std::string r): raw(r){}
+PCA::PCA(const std::string & r): raw(r){}
 
 void PCA::read(void){
     std::ifstream in(raw);
