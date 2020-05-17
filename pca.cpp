@@ -44,7 +44,7 @@ void PCA::compute(std::ostream& os){
     cov = data.transpose() * data / (M - 1);
     //Eigenvalues and Eigenvectors
     EigenSolver<MatrixXd> es(cov);
-    os << "Question 1\nTEigenvalues: " << std::endl << es.eigenvalues().real() << std::endl << std::endl;
+    os << "Question 1\nEigenvalues: " << std::endl << es.eigenvalues().real() << std::endl << std::endl;
     os << "Question 2\nEigenvectors:" << std::endl << es.eigenvectors().real() << std::endl << std::endl;
     os << "Col 1 - PC 1 (Eigenvalue = " << es.eigenvalues()[0].real() << "), Col 2 - PC 2 (Eigenvalue = " << es.eigenvalues()[1].real() << ")" << std::endl;
     os << "Row 1 - January (X), Row 2 - July (Y)" << std::endl << std::endl;
