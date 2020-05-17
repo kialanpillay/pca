@@ -44,7 +44,7 @@ void PCA::compute(std::ostream& os){
     cov = data.transpose() * data / (M - 1);
     //Eigenvalues and Eigenvectors
     EigenSolver<MatrixXd> es(cov);
-    os << "Question 1\nThe Eigenvalues: " << std::endl << es.eigenvalues().real() << std::endl << std::endl;
+    os << "Question 1\nTEigenvalues: " << std::endl << es.eigenvalues().real() << std::endl << std::endl;
     os << "Question 2\nEigenvectors:" << std::endl << es.eigenvectors().real() << std::endl << std::endl;
     os << "Col 1 - PC 1 (Eigenvalue = " << es.eigenvalues()[0].real() << "), Col 2 - PC 2 (Eigenvalue = " << es.eigenvalues()[1].real() << ")" << std::endl;
     os << "Row 1 - January (X), Row 2 - July (Y)" << std::endl << std::endl;
@@ -55,7 +55,7 @@ void PCA::compute(std::ostream& os){
     os << "Question 4\nTotal Variance: " << totalVariance << std::endl << std::endl;
 
     //Proportional PC Variance
-    os << "Question 5\nPC Variance = Eigenvalue.\nProportional PC Variance" << std::endl << std::endl;
+    os << "Question 5\nProportional PC Variance" << std::endl << std::endl;
     os << "Principal Component 1: " << es.eigenvalues()[0].real()/totalVariance * 100 << "%" << std::endl;
     os << "Principal Component 2: " << es.eigenvalues()[1].real()/totalVariance * 100 << "%" << std::endl << std::endl;
 }
